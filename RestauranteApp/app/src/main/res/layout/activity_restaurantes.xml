@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout android:id="@+id/detalhes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView android:text="Nome:"/>
+            <EditText android:id="@+id/nome"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Endereço:"/>
+            <EditText android:id="@+id/end"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Tipo:"/>
+            <RadioGroup android:id="@+id/tipos">
+                <RadioButton android:id="@+id/rodizio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/rodizio_radiobutton"/>
+                <RadioButton android:id="@+id/fast_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/fastfood_radiobutton"/>
+                <RadioButton android:id="@+id/a_domicilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/domicilio_radiobutton"/>
+            </RadioGroup>
+        </TableRow>
+        <Button android:id="@+id/salvar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"/>
+    </TableLayout>
+    <ListView android:id="@+id/restaurantes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/detalhes"/>
+</RelativeLayout>

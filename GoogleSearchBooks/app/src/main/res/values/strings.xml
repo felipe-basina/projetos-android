@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GoogleSearchBooks</string>
+    <string name="buscar">Buscar</string>
+    <string name="limpar">Limpar</string>
+    <string name="nome_autor">Digite o nome do seu autor favorito:</string>
+</resources>
